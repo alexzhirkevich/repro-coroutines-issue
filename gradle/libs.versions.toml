@@ -1,0 +1,111 @@
+[versions]
+apps-rewardedads="1.8.0"
+argon2="2.11"
+google-api-client="2.2.0"
+kotlin="1.8.20"
+ksp="1.8.20-1.0.11"
+kotlinpoet="1.14.2"
+gradleplugin="7.4.2"
+serialization="1.5.1"
+datetime="0.4.1"
+koin="3.4.2"
+koinktor="3.5.1"
+ktor="2.3.2"
+coroutines="1.7.3"
+uuid="0.0.17"
+resources="0.23.0"
+precompose="1.5.3"
+compose="1.5.10-beta02"
+activity-compose="1.8.0"
+shadow="7.1.2"
+micronaut="3.7.9"
+spotless = "6.22.0"
+ktlint = "1.0.0"
+sqldelight="2.0.0"
+settings="1.1.0"
+androidx-crypto="1.1.0-alpha06"
+decompose = "2.2.0-compose-experimental-alpha03"
+decompose-router="0.3.0"
+
+mongodb = "4.11.0"
+logback = "1.4.11"
+swagger = "1.0.44"
+
+
+[libraries]
+rewardedads = { module = "com.google.crypto.tink:apps-rewardedads", version.ref = "apps-rewardedads" }
+argon2 = { module = "de.mkammerer:argon2-jvm", version.ref = "argon2" }
+googleapiclient = { module = "com.google.api-client:google-api-client", version.ref = "google-api-client" }
+serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "koinktor" }
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "coroutines" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-negitioation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-android = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-ios = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
+ktor-client-test = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+ktor-client-jvm = { module = "io.ktor:ktor-client-java", version.ref = "ktor" }
+kspprocessing = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
+kotlinpoet-ksp = { module = "com.squareup:kotlinpoet-ksp", version.ref = "kotlinpoet" }
+kotlinpoet = { module = "com.squareup:kotlinpoet", version.ref = "kotlinpoet" }
+sqldelight-core = { module ="app.cash.sqldelight:runtime", version.ref = "sqldelight"}
+sqldelight-android = { module ="app.cash.sqldelight:android-driver", version.ref = "sqldelight"}
+sqldelight-desktop = { module ="app.cash.sqldelight:sqlite-driver", version.ref = "sqldelight"}
+sqldelight-gradle = { module = "app.cash.sqldelight:gradle-plugin", version.ref = "sqldelight" }
+sqldelight-ios = { module ="app.cash.sqldelight:native-driver", version.ref = "sqldelight"}
+settings = { module ="com.russhwolf:multiplatform-settings", version.ref = "settings"}
+androidx-crypto = { module ="androidx.security:security-crypto-ktx", version.ref = "androidx-crypto"}
+androidx-activitycompose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+
+uuid = { module = "app.softwork:kotlinx-uuid-core", version.ref = "uuid" }
+resources-core = { module = "dev.icerock.moko:resources", version.ref = "resources" }
+resources-compose = { module = "dev.icerock.moko:resources-compose", version.ref = "resources" }
+#precompose-core = { module = "moe.tlaster:precompose", version.ref = "precompose" }
+#precompose-viewmodel = { module = "moe.tlaster:precompose-viewmodel", version.ref = "precompose" }
+decompose-core = { module = "com.arkivanov.decompose:decompose", version.ref = "decompose" }
+decompose-compose = { module = "com.arkivanov.decompose:extensions-compose-jetbrains", version.ref = "decompose" }
+decompose-router = { module = "io.github.xxfast:decompose-router", version.ref = "decompose-router" }
+
+ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-server-swagger = { module = "io.ktor:ktor-server-swagger-jvm", version.ref = "ktor" }
+ktor-server-openapi = { module = "io.ktor:ktor-server-openapi", version.ref = "ktor" }
+ktor-server-negotiation = { module = "io.ktor:ktor-server-content-negotiation-jvm", version.ref = "ktor" }
+ktor-server-loggin = { module = "io.ktor:ktor-server-call-logging-jvm", version.ref = "ktor" }
+ktor-server-auth = { module = "io.ktor:ktor-server-auth-jvm", version.ref = "ktor" }
+ktor-server-jwt = { module = "io.ktor:ktor-server-auth-jwt-jvm", version.ref = "ktor" }
+ktor-server-config = { module = "io.ktor:ktor-server-config-yaml", version.ref = "ktor" }
+ktor-server-statuspages = { module = "io.ktor:ktor-server-status-pages", version.ref = "ktor" }
+mongodb= { module = "org.mongodb:mongodb-driver-kotlin-coroutine", version.ref = "mongodb" }
+logback= { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+swagger= { module = "io.swagger.codegen.v3:swagger-codegen-generators", version.ref = "swagger" }
+
+
+
+[plugins]
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "gradleplugin" }
+android-library = { id = "com.android.library", version.ref = "gradleplugin" }
+kotlin-js = { id = "org.jetbrains.kotlin.js", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+resources = { id = "dev.icerock.mobile.multiplatform-resources", version.ref = "resources" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+micronaut = { id = "io.micronaut.application", version.ref = "micronaut" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
